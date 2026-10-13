@@ -211,10 +211,7 @@ footer .small{font-size:14px;opacity:.6;display:flex;flex-wrap:wrap;gap:6px 24px
 .centro{background:var(--wht);border:6px solid var(--ink);border-radius:30px;padding:18px 22px;display:flex;flex-direction:column;gap:6px;min-width:0}
 .centro h3{font-size:22px;letter-spacing:-.02em;line-height:1.15}
 .centro p{font-size:17px;font-weight:600;overflow-wrap:anywhere}
-.centro .hrs{align-self:stretch;margin-top:8px;background:var(--lim);border:4px solid var(--ink);border-radius:18px;padding:8px 14px;display:grid;gap:4px}
-.centro .hrs div{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:14px;line-height:1.3}
-.centro .hrs .d{font-weight:700}
-.centro .hrs .h{font-weight:800;white-space:nowrap;text-align:right}
+.centro .hr{margin-top:6px;font-size:15px;font-weight:800;color:var(--vio)}
 .vacio2{background:var(--wht);border:6px solid var(--ink);border-radius:30px;padding:24px;display:flex;flex-direction:column;gap:14px;align-items:flex-start;font-size:19px;max-width:640px}
 #hero2{background:var(--lil);padding-top:clamp(32px,6vw,64px)}
 #lista2{background:var(--cream)}
@@ -257,7 +254,7 @@ footer .small{font-size:14px;opacity:.6;display:flex;flex-wrap:wrap;gap:6px 24px
       <li>Agua</li><li>Pañales (bebés y adultos)</li><li>Alimentos secos</li><li>Fórmula infantil, lista para tomar</li><li>Colchonetas y frazadas</li><li>O lo que puedas aportar</li>
     </ul>
     <h2 class="h2" style="font-size:clamp(34px,8vw,56px)">Sucursales habilitadas</h2>
-    <p style="margin:0 0 14px;font-weight:600;font-size:15px">Los horarios son los de atención de cada sucursal. Pueden variar en días feriados.</p>
+    <p style="margin:0 0 14px;font-weight:600;font-size:15px">Recibimos donaciones del martes 13 al viernes 16 de octubre, hasta las 12:00 m. d. Horario de atención de cada sucursal.</p>
     <input class="filter" id="q" type="search" placeholder="Buscar sucursal o zona" aria-label="Buscar sucursal" hidden>
     <ul class="centros" id="centros" aria-label="Centros de acopio"></ul>
     <div class="vacio2" id="vacio2">
@@ -287,107 +284,107 @@ footer .small{font-size:14px;opacity:.6;display:flex;flex-wrap:wrap;gap:6px 24px
     {
       "nombre": "Multiplaza",
       "direccion": "Centro comercial Multiplaza, junto a Doit Center, frente a Panafoto",
-      "horario": "Lun–Sáb 10 a. m.–8 p. m. · Dom y feriados 11 a. m.–7 p. m."
+      "horario": "10 a. m.–8 p. m."
     },
     {
       "nombre": "Albrook Mall",
       "direccion": "Albrook Mall, por la entrada de Panafoto, debajo de las escaleras eléctricas de Doit Center",
-      "horario": "Lun–Sáb 10 a. m.–8 p. m. · Dom y feriados 11 a. m.–7 p. m."
+      "horario": "10 a. m.–8 p. m."
     },
     {
       "nombre": "Metro Mall",
       "direccion": "Metromall, Vía Tocumen, frente a Los Pueblos, entrada principal",
-      "horario": "Lun–Sáb 9 a. m.–8 p. m. · Dom y feriados 10 a. m.–7 p. m."
+      "horario": "9 a. m.–8 p. m."
     },
     {
       "nombre": "Clayton – Ciudad del Saber",
       "direccion": "La Plaza Ciudad del Saber, junto a Banco General",
-      "horario": "Lun–Sáb 7 a. m.–6:30 p. m. · Dom y feriados 7 a. m.–6 p. m."
+      "horario": "7 a. m.–6:30 p. m."
     },
     {
       "nombre": "Town Center",
       "direccion": "Town Center Costa del Este, nivel M1, junto a Banco General",
-      "horario": "Lun–Vie 9 a. m.–7:30 p. m. · Sáb 10 a. m.–7:30 p. m. · Dom y feriados 11 a. m.–7 p. m."
+      "horario": "9 a. m.–7:30 p. m."
     },
     {
       "nombre": "Brisas del Golf",
       "direccion": "Plaza Paseo Drive, dentro de Felipe Motta",
-      "horario": "Lun–Sáb 8 a. m.–8:30 p. m. · Dom y feriados 10 a. m.–5:30 p. m."
+      "horario": "8 a. m.–8:30 p. m."
     },
     {
       "nombre": "Novey Los Ángeles",
       "direccion": "Dentro de Novey Los Ángeles",
-      "horario": "Lun–Sáb 8 a. m.–7:30 p. m. · Dom y feriados 9 a. m.–5:30 p. m."
+      "horario": "8 a. m.–7:30 p. m."
     },
     {
       "nombre": "Panafoto Calle 50",
       "direccion": "Dentro de Panafoto, Calle 50",
-      "horario": "Lun–Vie 9 a. m.–6:30 p. m. · Sáb, Dom y feriados 11 a. m.–5:30 p. m."
+      "horario": "9 a. m.–6:30 p. m."
     },
     {
       "nombre": "Transístmica",
       "direccion": "Planta baja de la fábrica, Transístmica",
-      "horario": "Lun–Vie 7 a. m.–3:30 p. m. · Sáb 7 a. m.–1:30 p. m. · Dom y feriados cerrado"
+      "horario": "7 a. m.–3:30 p. m."
     },
     {
       "nombre": "Plaza Concordia",
       "direccion": "Plaza Concordia, frente al supermercado Rey, Vía España",
-      "horario": "Lun–Vie 7 a. m.–4:30 p. m. · Sáb 7 a. m.–2:30 p. m. · Dom y feriados cerrado"
+      "horario": "7 a. m.–4:30 p. m."
     },
     {
       "nombre": "Universidad de Panamá",
       "direccion": "Vía Transístmica, dentro de la librería",
-      "horario": "Lun–Vie 8 a. m.–6:30 p. m."
+      "horario": "8 a. m.–6:30 p. m."
     },
     {
       "nombre": "Hospital Pacífica Salud",
       "direccion": "Costa del Este, detrás de Town Center",
-      "horario": "Lun–Sáb 7 a. m.–8 p. m. · Dom y feriados cerrado"
+      "horario": "7 a. m.–8 p. m."
     },
     {
       "nombre": "Kiosco Coffee Town Center",
       "direccion": "Town Center, Costa del Este, nivel M2, junto a Félix B. Maduro",
-      "horario": "Lun–Vie 9 a. m.–8 p. m. · Sáb 10 a. m.–7:30 p. m. · Dom y feriados 11 a. m.–7 p. m."
+      "horario": "9 a. m.–8 p. m."
     },
     {
       "nombre": "Hospital Paitilla",
       "direccion": "Planta baja del Hospital Paitilla",
-      "horario": "Lun–Sáb 6:30 a. m.–7:30 p. m. · Dom y feriados 9 a. m.–5:30 p. m."
+      "horario": "6:30 a. m.–7:30 p. m."
     },
     {
       "nombre": "Hospital Punta Pacífica",
       "direccion": "Boulevard Pacífica y Vía Punta Darién, primer piso, cerca de los consultorios",
-      "horario": "Lun–Vie 7 a. m.–6:30 p. m. · Sáb 7 a. m.–1 p. m. · Dom y feriados cerrado"
+      "horario": "7 a. m.–6:30 p. m."
     },
     {
       "nombre": "Hospital San Fernando",
       "direccion": "Hospital San Fernando, Vía España, planta baja",
-      "horario": "Lun–Sáb 7 a. m.–8 p. m. · Dom y feriados 9 a. m.–5:30 p. m."
+      "horario": "7 a. m.–8 p. m."
     },
     {
       "nombre": "Consultorios Paitilla",
       "direccion": "Planta baja, dentro de la farmacia El Javillo",
-      "horario": "Lun–Vie 8 a. m.–6:30 p. m. · Sáb 8 a. m.–3:30 p. m. · Dom y feriados cerrado"
+      "horario": "8 a. m.–6:30 p. m."
     },
     {
       "nombre": "PH Santa Familia",
       "direccion": "Casco Antiguo",
-      "horario": "Todos los días 9 a. m.–7 p. m."
+      "horario": "9 a. m.–7 p. m."
     },
     {
       "nombre": "Westland Mall",
       "direccion": "Westland Mall, junto a las escaleras eléctricas de la plaza principal",
-      "horario": "Lun–Vie 11 a. m.–8 p. m. · Sáb 10 a. m.–8:30 p. m. · Dom y feriados 11 a. m.–6:30 p. m."
+      "horario": "11 a. m.–8 p. m."
     },
     {
       "nombre": "Boquete",
       "direccion": "Plaza Don Vidal, frente al parque",
-      "horario": "Mar–Vie 9 a. m.–5:30 p. m. · Sáb y Dom 9 a. m.–6:30 p. m. · Feriados 9 a. m.–7:30 p. m. · Lun cerrado"
+      "horario": "9 a. m.–5:30 p. m."
     },
     {
       "nombre": "Coronado",
       "direccion": "Plaza Las Pérgolas, dentro de Felipe Motta, Coronado",
-      "horario": "Lun–Sáb 8 a. m.–7:30 p. m. · Dom y feriados 8 a. m.–5:30 p. m."
+      "horario": "8 a. m.–7:30 p. m."
     }
   ]
 }
@@ -427,18 +424,7 @@ footer .small{font-size:14px;opacity:.6;display:flex;flex-wrap:wrap;gap:6px 24px
       var h = document.createElement('h3'); h.textContent = c.nombre || 'Sucursal Café Durán';
       li.appendChild(h);
       if(c.direccion){ var p = document.createElement('p'); p.textContent = c.direccion; li.appendChild(p); }
-      if(c.horario){
-        var box = document.createElement('div'); box.className = 'hrs';
-        c.horario.split(' · ').forEach(function(part){
-          var m = part.match(/^(.*?)\s*(\d.*|cerrado)$/i); if(!m){ m = [0, part, '']; }
-          var r = document.createElement('div');
-          var d = document.createElement('span'); d.className = 'd'; d.textContent = m[1];
-          var h = document.createElement('span'); h.className = 'h';
-          h.textContent = m[2].replace(/^cerrado$/i,'Cerrado').replace(/ /g,'\u00a0');
-          r.appendChild(d); r.appendChild(h); box.appendChild(r);
-        });
-        li.appendChild(box);
-      }
+      if(c.horario){ var s = document.createElement('span'); s.className = 'hr'; s.textContent = 'Mar 13 – Vie 16 · ' + c.horario.replace(/ /g,'\u00a0').replace('\u00a0·\u00a0',' · '); li.appendChild(s); }
       ul.appendChild(li);
     });
     if(list.length > 6){
