@@ -211,7 +211,10 @@ footer .small{font-size:14px;opacity:.6;display:flex;flex-wrap:wrap;gap:6px 24px
 .centro{background:var(--wht);border:6px solid var(--ink);border-radius:30px;padding:18px 22px;display:flex;flex-direction:column;gap:6px;min-width:0}
 .centro h3{font-size:22px;letter-spacing:-.02em;line-height:1.15}
 .centro p{font-size:17px;font-weight:600;overflow-wrap:anywhere}
-.centro .hr{align-self:flex-start;margin-top:6px;background:var(--lim);border:4px solid var(--ink);border-radius:999px;padding:3px 14px;font-size:14px;font-weight:800}
+.centro .hrs{align-self:stretch;margin-top:8px;background:var(--lim);border:4px solid var(--ink);border-radius:18px;padding:8px 14px;display:grid;gap:4px}
+.centro .hrs div{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:14px;line-height:1.3}
+.centro .hrs .d{font-weight:700}
+.centro .hrs .h{font-weight:800;white-space:nowrap;text-align:right}
 .vacio2{background:var(--wht);border:6px solid var(--ink);border-radius:30px;padding:24px;display:flex;flex-direction:column;gap:14px;align-items:flex-start;font-size:19px;max-width:640px}
 #hero2{background:var(--lil);padding-top:clamp(32px,6vw,64px)}
 #lista2{background:var(--cream)}
@@ -424,7 +427,18 @@ footer .small{font-size:14px;opacity:.6;display:flex;flex-wrap:wrap;gap:6px 24px
       var h = document.createElement('h3'); h.textContent = c.nombre || 'Sucursal Café Durán';
       li.appendChild(h);
       if(c.direccion){ var p = document.createElement('p'); p.textContent = c.direccion; li.appendChild(p); }
-      if(c.horario){ var s = document.createElement('span'); s.className = 'hr'; s.textContent = c.horario; li.appendChild(s); }
+      if(c.horario){
+        var box = document.createElement('div'); box.className = 'hrs';
+        c.horario.split(' · ').forEach(function(part){
+          var m = part.match(/^(.*?)\s*(\d.*|cerrado)$/i); if(!m){ m = [0, part, '']; }
+          var r = document.createElement('div');
+          var d = document.createElement('span'); d.className = 'd'; d.textContent = m[1];
+          var h = document.createElement('span'); h.className = 'h';
+          h.textContent = m[2].replace(/^cerrado$/i,'Cerrado').replace(/ /g,'\u00a0');
+          r.appendChild(d); r.appendChild(h); box.appendChild(r);
+        });
+        li.appendChild(box);
+      }
       ul.appendChild(li);
     });
     if(list.length > 6){
