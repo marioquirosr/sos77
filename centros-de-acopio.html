@@ -262,7 +262,9 @@ footer .small{font-size:14px;opacity:.6;display:flex;flex-wrap:wrap;gap:6px 24px
 .centro{background:var(--wht);border:6px solid var(--ink);border-radius:30px;padding:18px 22px;display:flex;flex-direction:column;gap:6px;min-width:0}
 .centro h3{font-size:22px;letter-spacing:-.02em;line-height:1.15}
 .centro p{font-size:17px;font-weight:600;overflow-wrap:anywhere}
-.centro .hr{margin-top:6px;font-size:15px;font-weight:800;color:var(--vio)}
+.centro .hr{margin-top:10px;display:flex;flex-direction:column;gap:2px}
+.centro .hr-d{font-size:15px;font-weight:800;color:var(--vio)}
+.centro .hr-h{font-size:18px;font-weight:900;color:var(--ink)}
 .vacio2{background:var(--wht);border:6px solid var(--ink);border-radius:30px;padding:24px;display:flex;flex-direction:column;gap:14px;align-items:flex-start;font-size:19px;max-width:640px}
 #hero2{background:var(--lil);padding-top:clamp(32px,6vw,64px)}
 #lista2{background:var(--cream)}
@@ -475,7 +477,13 @@ footer .small{font-size:14px;opacity:.6;display:flex;flex-wrap:wrap;gap:6px 24px
       var h = document.createElement('h3'); h.textContent = c.nombre || 'Sucursal Café Durán';
       li.appendChild(h);
       if(c.direccion){ var p = document.createElement('p'); p.textContent = c.direccion; li.appendChild(p); }
-      if(c.horario){ var s = document.createElement('span'); s.className = 'hr'; s.textContent = 'Mar 13 – Vie 16 · ' + c.horario.replace(/ /g,'\u00a0').replace('\u00a0·\u00a0',' · '); li.appendChild(s); }
+      if(c.horario){
+        var s = document.createElement('div'); s.className = 'hr';
+        var d1 = document.createElement('span'); d1.className = 'hr-d'; d1.textContent = 'Mar 13 \u2013 Vie 16';
+        var d2 = document.createElement('span'); d2.className = 'hr-h';
+        d2.textContent = c.horario.replace(/\s*\u2013\s*/g, '\u00a0\u2013\u00a0').replace(/ /g, '\u00a0');
+        s.appendChild(d1); s.appendChild(d2); li.appendChild(s);
+      }
       ul.appendChild(li);
     });
     if(list.length > 6){
