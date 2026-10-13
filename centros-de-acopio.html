@@ -2,6 +2,26 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F74ZTV7WVR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-F74ZTV7WVR');
+  /* eventos de clic */
+  document.addEventListener('click', function(e){
+    var el = e.target.closest && e.target.closest('a,button'); if(!el) return;
+    var ev = null, href = el.getAttribute('href') || '';
+    if(el.hasAttribute('data-copy')) ev = ['copiar_dato', {tipo: el.getAttribute('data-copy') === '61502322' ? 'yappy' : 'cuenta_ach'}];
+    else if(el.id === 'share') ev = ['copiar_enlace_pagina', {}];
+    else if(href.indexOf('wa.me/50762440096') > -1) ev = ['clic_whatsapp', {destino: 'contacto_acopio'}];
+    else if(href.indexOf('wa.me/50761502322') > -1) ev = ['clic_whatsapp', {destino: 'comprobante'}];
+    else if(href.indexOf('centros-de-acopio') > -1) ev = ['ver_centros_acopio', {}];
+    else if(href.indexOf('donantes.html') > -1) ev = ['ver_donantes', {}];
+    if(ev && window.gtag) gtag('event', ev[0], ev[1]);
+  });
+</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#2A1A55">
 <title>Centros de acopio · Team SOS 7.7</title>
