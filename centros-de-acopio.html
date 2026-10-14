@@ -438,9 +438,16 @@ footer .pw img{display:block;height:22px;width:auto}
 (function(){
   var D = JSON.parse(document.getElementById('data').textContent);
   var $ = function(id){return document.getElementById(id)};
-  var list = D.acopios || [];
-  if(list.length){ $('acopio-n').textContent = list.length === 1 ? '1 centro de acopio' : list.length + ' centros de acopio'; }
-
+  /* datos en vivo: se leen de la rama "datos" del repo (sin redeploy). Si falla, se usan los embebidos. */
+  var DATA_URL = 'https://raw.githubusercontent.com/marioquirosr/sos77/datos/data.json';
+  function loadRemote(cb){
+    try{
+      fetch(DATA_URL + '?t=' + Math.floor(Date.now()/60000), {cache:'no-store'})
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j) cb(j); })
+        .catch(function(){});
+    }catch(e){}
+  }
   /* cuenta regresiva */
   var end = new Date(D.deadline).getTime();
   function pad(n){return n<10?'0'+n:''+n}
@@ -461,7 +468,11 @@ footer .pw img{display:block;height:22px;width:auto}
   if(tick()){ var iv = setInterval(function(){ if(!tick()) clearInterval(iv); }, 1000); }
 
   /* lista de centros */
-  var ul = $('centros'), q = $('q');
+  var ul = $('centros'), q = $('q'), qBound = false;
+  function renderAc(D){
+  var list = D.acopios || [];
+  if(list.length){ $('acopio-n').textContent = list.length === 1 ? '1 centro de acopio' : list.length + ' centros de acopio'; }
+  ul.innerHTML = '';
   if(list.length){
     $('vacio2').hidden = true;
     list.forEach(function(c){
@@ -480,12 +491,15 @@ footer .pw img{display:block;height:22px;width:auto}
     });
     if(list.length > 6){
       q.hidden = false;
-      q.addEventListener('input', function(){
+      if(!qBound){ qBound = true; q.addEventListener('input', function(){
         var t = q.value.trim().toLowerCase();
         Array.prototype.forEach.call(ul.children, function(li){ li.hidden = !!t && li.textContent.toLowerCase().indexOf(t) === -1; });
-      });
+      }); }
     }
   }
+  }
+  renderAc(D);
+  loadRemote(function(R){ if(R.acopios) renderAc(R); });
 
   /* copiar enlace */
   var sh = $('share');

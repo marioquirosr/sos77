@@ -444,12 +444,23 @@ footer .pw img{display:block;height:22px;width:auto}
   function money(n){
     return '$' + Number(n).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
   }
+  /* datos en vivo: se leen de la rama "datos" del repo (sin redeploy). Si falla, se usan los embebidos. */
+  var DATA_URL = 'https://raw.githubusercontent.com/marioquirosr/sos77/datos/data.json';
+  function loadRemote(cb){
+    try{
+      fetch(DATA_URL + '?t=' + Math.floor(Date.now()/60000), {cache:'no-store'})
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j) cb(j); })
+        .catch(function(){});
+    }catch(e){}
+  }
+  function renderDon(D){
   var list = D.donaciones || [];
   var total = list.reduce(function(a,d){return a + Number(d.m||0)}, 0);
   $('total').textContent = money(total);
   $('count').textContent = list.length === 1 ? '1 aporte' : list.length + ' aportes';
   $('upd').textContent = 'Actualizado: ' + D.actualizado;
-  var ol = $('lista');
+  var ol = $('lista'); ol.innerHTML = '';
   list.forEach(function(d,i){
     var li = document.createElement('li'); li.className = 'don';
     var av = document.createElement('span'); av.className = 'av';
@@ -462,6 +473,9 @@ footer .pw img{display:block;height:22px;width:auto}
     li.appendChild(av); li.appendChild(who); li.appendChild(amt);
     ol.appendChild(li);
   });
+  }
+  renderDon(D);
+  loadRemote(function(R){ if(R.donaciones) renderDon(R); });
 
   /* copiar enlace */
   var sh = $('share');

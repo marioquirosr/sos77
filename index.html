@@ -653,6 +653,17 @@ footer .pw img{display:block;height:22px;width:auto}
   function money(n){
     return '$' + Number(n).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
   }
+  /* datos en vivo: se leen de la rama "datos" del repo (sin redeploy). Si falla, se usan los embebidos. */
+  var DATA_URL = 'https://raw.githubusercontent.com/marioquirosr/sos77/datos/data.json';
+  function loadRemote(cb){
+    try{
+      fetch(DATA_URL + '?t=' + Math.floor(Date.now()/60000), {cache:'no-store'})
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j) cb(j); })
+        .catch(function(){});
+    }catch(e){}
+  }
+  function renderData(D){
   var list = D.donaciones || [];
   var total = list.reduce(function(a,d){return a + Number(d.m||0)}, 0);
   $('total').textContent = money(total);
@@ -663,6 +674,9 @@ footer .pw img{display:block;height:22px;width:auto}
   /* centros de acopio: solo el conteo; la lista completa vive en centros-de-acopio.html */
   var nAc = (D.acopios || []).length;
   if(nAc){ $('acopio-n').textContent = nAc === 1 ? '1 centro de acopio' : nAc + ' centros de acopio'; }
+  }
+  renderData(D);
+  loadRemote(function(R){ renderData({donaciones: R.donaciones || D.donaciones, actualizado: R.actualizado || D.actualizado, acopios: R.acopios || D.acopios}); });
 
   /* organizadores */
   var names = ['Mario Quirós','Ivonne de la Guardia','Rodrigo Cambra','Ana Garcia','Luis Franco','Julio Chandeck','Manuel GdP','Ariel Vasquez','David Riquelme','Teresita Ferrer'];
