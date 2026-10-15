@@ -1,217 +1,221 @@
 {
-  "actualizado": "14 oct, 11:41 a.m.",
-  "donaciones": [
-    {
-      "n": "Maria Laura Rodriguez Real",
-      "m": 20
-    },
-    {
-      "n": "Ivonne Marie De La Guardia Rodriguez",
-      "m": 30
-    },
-    {
-      "n": "Familia Quirós García",
-      "m": 100
-    },
-    {
-      "n": "Dagne Lisette Rios Cheu",
-      "m": 20
-    },
-    {
-      "n": "Adrianne Tadee Barraza Ulloa",
-      "m": 30
-    },
-    {
-      "n": "Familia Rodríguez Pereira",
-      "m": 250
-    },
-    {
-      "n": "Rafael Enrique Rodriguez Montenegro",
-      "m": 10
-    },
-    {
-      "n": "Guianella Ramirez Rodriguez",
-      "m": 10
-    },
-    {
-      "n": "Moris Boulos Quiros",
-      "m": 20
-    },
-    {
-      "n": "Ligia Elena Saez Escobar",
-      "m": 10
-    },
-    {
-      "n": "Yamilly Lizeth Bonilla Batista",
-      "m": 35
-    },
-    {
-      "n": "Ernesto Enrique Reyes Pinate",
-      "m": 40
-    },
-    {
-      "n": "Tahumanara Nazhca Simons Moreno",
-      "m": 15
-    },
-    {
-      "n": "Corazon Aime Smith Vallester",
-      "m": 25
-    },
-    {
-      "n": "Alejandra Stephanie Rodriguez Cuevas",
-      "m": 15
-    },
-    {
-      "n": "Marilys Dayana Quintero Guerra",
-      "m": 30
-    },
-    {
-      "n": "Selene Maria Orozco Marmolejo",
-      "m": 15
-    },
-    {
-      "n": "Juan Manuel Castillero Villalaz",
-      "m": 30
-    },
-    {
-      "n": "Estefania Rivera Rios",
-      "m": 50
-    },
-    {
-      "n": "Andres Eloy Rivera Rios",
-      "m": 25
-    },
-    {
-      "n": "Andres Abrego",
-      "m": 30
-    },
-    {
-      "n": "Andres Abrego",
-      "m": 100
-    },
-    {
-      "n": "Alvaro Enrique Tomas Abrahams",
-      "m": 75
-    },
-    {
-      "n": "Mercedes Minghelli Vaini",
-      "m": 50
-    },
-    {
-      "n": "Veronica Gonzalez",
-      "m": 25
-    },
-    {
-      "n": "Ruben A.",
-      "m": 90
-    },
-    {
-      "n": "Ledys Maure",
-      "m": 15
-    },
-    {
-      "n": "Kattia Villarreal",
-      "m": 20
-    },
-    {
-      "n": "Maximiliano Egroj Nuñez Flores",
-      "m": 30
-    },
-    {
-      "n": "Ruben Fabricio Quiroz Hernandez",
-      "m": 50
-    }
-  ],
-  "acopios": [
-    {
-      "nombre": "Multiplaza",
-      "direccion": "Centro comercial Multiplaza, junto a Doit Center, frente a Panafoto",
-      "horario": "10 a. m.–8 p. m."
-    },
-    {
-      "nombre": "Albrook Mall",
-      "direccion": "Albrook Mall, por la entrada de Panafoto, debajo de las escaleras eléctricas de Doit Center",
-      "horario": "10 a. m.–8 p. m."
-    },
-    {
-      "nombre": "Metro Mall",
-      "direccion": "Metromall, Vía Tocumen, frente a Los Pueblos, entrada principal",
-      "horario": "9 a. m.–8 p. m."
-    },
-    {
-      "nombre": "Clayton – Ciudad del Saber",
-      "direccion": "La Plaza Ciudad del Saber, junto a Banco General",
-      "horario": "7 a. m.–6:30 p. m."
-    },
-    {
-      "nombre": "Town Center",
-      "direccion": "Town Center Costa del Este, nivel M1, junto a Banco General",
-      "horario": "9 a. m.–7:30 p. m."
-    },
-    {
-      "nombre": "Brisas del Golf",
-      "direccion": "Plaza Paseo Drive, dentro de Felipe Motta",
-      "horario": "8 a. m.–8:30 p. m."
-    },
-    {
-      "nombre": "Novey Los Ángeles",
-      "direccion": "Dentro de Novey Los Ángeles",
-      "horario": "8 a. m.–7:30 p. m."
-    },
-    {
-      "nombre": "Panafoto Calle 50",
-      "direccion": "Dentro de Panafoto, Calle 50",
-      "horario": "9 a. m.–6:30 p. m."
-    },
-    {
-      "nombre": "Transístmica",
-      "direccion": "Planta baja de la fábrica, Transístmica",
-      "horario": "7 a. m.–3:30 p. m."
-    },
-    {
-      "nombre": "Plaza Concordia",
-      "direccion": "Plaza Concordia, frente al supermercado Rey, Vía España",
-      "horario": "7 a. m.–4:30 p. m."
-    },
-    {
-      "nombre": "Universidad de Panamá",
-      "direccion": "Vía Transístmica, dentro de la librería",
-      "horario": "8 a. m.–6:30 p. m."
-    },
-    {
-      "nombre": "Hospital Pacífica Salud",
-      "direccion": "Costa del Este, detrás de Town Center",
-      "horario": "7 a. m.–8 p. m."
-    },
-    {
-      "nombre": "Kiosco Coffee Town Center",
-      "direccion": "Town Center, Costa del Este, nivel M2, junto a Félix B. Maduro",
-      "horario": "9 a. m.–8 p. m."
-    },
-    {
-      "nombre": "Hospital Paitilla",
-      "direccion": "Planta baja del Hospital Paitilla",
-      "horario": "6:30 a. m.–7:30 p. m."
-    },
-    {
-      "nombre": "Hospital Punta Pacífica",
-      "direccion": "Boulevard Pacífica y Vía Punta Darién, primer piso, cerca de los consultorios",
-      "horario": "7 a. m.–6:30 p. m."
-    },
-    {
-      "nombre": "Hospital San Fernando",
-      "direccion": "Hospital San Fernando, Vía España, planta baja",
-      "horario": "7 a. m.–8 p. m."
-    },
-    {
-      "nombre": "Consultorios Paitilla",
-      "direccion": "Planta baja, dentro de la farmacia El Javillo",
-      "horario": "8 a. m.–6:30 p. m."
-    },
-    {
-      "nombre": "PH Santa Familia",
-      "direccion": "Casco Antiguo",
-      "horario": "9 a. m.–7 p. m."
-    }
-  ]
+ "actualizado": "14 oct, 9:08 p.m.",
+ "donaciones": [
+  {
+   "n": "Maria Laura Rodriguez Real",
+   "m": 20
+  },
+  {
+   "n": "Adrianne Tadee Barraza Ulloa",
+   "m": 30
+  },
+  {
+   "n": "Yamilly Lizeth Bonilla Batista",
+   "m": 35
+  },
+  {
+   "n": "Tahumanara Nazhca Simons Moreno",
+   "m": 15
+  },
+  {
+   "n": "Alejandra Stephanie Rodriguez Cuevas",
+   "m": 15
+  },
+  {
+   "n": "Marilys Dayana Quintero Guerra",
+   "m": 30
+  },
+  {
+   "n": "Selene Maria Orozco Marmolejo",
+   "m": 15
+  },
+  {
+   "n": "Andres Abrego",
+   "m": 100
+  },
+  {
+   "n": "Veronica Gonzalez",
+   "m": 25
+  },
+  {
+   "n": "Ruben A.",
+   "m": 90
+  },
+  {
+   "n": "Ledys Maure",
+   "m": 15
+  },
+  {
+   "n": "Kattia Villarreal",
+   "m": 20
+  },
+  {
+   "n": "Ivonne Marie De La Guardia Rodriguez",
+   "m": 30
+  },
+  {
+   "n": "Familia Quirós Rodríguez",
+   "m": 100
+  },
+  {
+   "n": "Familia Rodríguez Pereira",
+   "m": 250
+  },
+  {
+   "n": "Guianella Ramirez Rodriguez",
+   "m": 10
+  },
+  {
+   "n": "Ernesto Enrique Reyes Pinate",
+   "m": 40
+  },
+  {
+   "n": "Corazon Aime Smith Vallester",
+   "m": 25
+  },
+  {
+   "n": "Juan Manuel Castillero Villalaz",
+   "m": 30
+  },
+  {
+   "n": "Estefania Rivera Rios",
+   "m": 50
+  },
+  {
+   "n": "Andres Eloy Rivera Rios",
+   "m": 25
+  },
+  {
+   "n": "Andres Abrego",
+   "m": 30
+  },
+  {
+   "n": "Alvaro Enrique Tomas Abrahams",
+   "m": 75
+  },
+  {
+   "n": "Mercedes Minghelli Vaini",
+   "m": 50
+  },
+  {
+   "n": "Maximiliano Egroj Nuñez Flores",
+   "m": 30
+  },
+  {
+   "n": "Ruben Fabricio Quiroz Hernandez",
+   "m": 50
+  },
+  {
+   "n": "Dagne Lisette Rios Cheu",
+   "m": 20
+  },
+  {
+   "n": "Rafael Enrique Rodriguez Montenegro",
+   "m": 10
+  },
+  {
+   "n": "Moris Boulos Quiros",
+   "m": 20
+  },
+  {
+   "n": "Ligia Elena Saez Escobar",
+   "m": 10
+  },
+  {
+   "n": "Rolando Dario Rodriguez Cespedes",
+   "m": 100
+  }
+ ],
+ "acopios": [
+  {
+   "nombre": "Multiplaza",
+   "direccion": "Centro comercial Multiplaza, junto a Doit Center, frente a Panafoto",
+   "horario": "10 a. m.–8 p. m."
+  },
+  {
+   "nombre": "Albrook Mall",
+   "direccion": "Albrook Mall, por la entrada de Panafoto, debajo de las escaleras eléctricas de Doit Center",
+   "horario": "10 a. m.–8 p. m."
+  },
+  {
+   "nombre": "Metro Mall",
+   "direccion": "Metromall, Vía Tocumen, frente a Los Pueblos, entrada principal",
+   "horario": "9 a. m.–8 p. m."
+  },
+  {
+   "nombre": "Clayton – Ciudad del Saber",
+   "direccion": "La Plaza Ciudad del Saber, junto a Banco General",
+   "horario": "7 a. m.–6:30 p. m."
+  },
+  {
+   "nombre": "Town Center",
+   "direccion": "Town Center Costa del Este, nivel M1, junto a Banco General",
+   "horario": "9 a. m.–7:30 p. m."
+  },
+  {
+   "nombre": "Brisas del Golf",
+   "direccion": "Plaza Paseo Drive, dentro de Felipe Motta",
+   "horario": "8 a. m.–8:30 p. m."
+  },
+  {
+   "nombre": "Novey Los Ángeles",
+   "direccion": "Dentro de Novey Los Ángeles",
+   "horario": "8 a. m.–7:30 p. m."
+  },
+  {
+   "nombre": "Panafoto Calle 50",
+   "direccion": "Dentro de Panafoto, Calle 50",
+   "horario": "9 a. m.–6:30 p. m."
+  },
+  {
+   "nombre": "Transístmica",
+   "direccion": "Planta baja de la fábrica, Transístmica",
+   "horario": "7 a. m.–3:30 p. m."
+  },
+  {
+   "nombre": "Plaza Concordia",
+   "direccion": "Plaza Concordia, frente al supermercado Rey, Vía España",
+   "horario": "7 a. m.–4:30 p. m."
+  },
+  {
+   "nombre": "Universidad de Panamá",
+   "direccion": "Vía Transístmica, dentro de la librería",
+   "horario": "8 a. m.–6:30 p. m."
+  },
+  {
+   "nombre": "Hospital Pacífica Salud",
+   "direccion": "Costa del Este, detrás de Town Center",
+   "horario": "7 a. m.–8 p. m."
+  },
+  {
+   "nombre": "Kiosco Coffee Town Center",
+   "direccion": "Town Center, Costa del Este, nivel M2, junto a Félix B. Maduro",
+   "horario": "9 a. m.–8 p. m."
+  },
+  {
+   "nombre": "Hospital Paitilla",
+   "direccion": "Planta baja del Hospital Paitilla",
+   "horario": "6:30 a. m.–7:30 p. m."
+  },
+  {
+   "nombre": "Hospital Punta Pacífica",
+   "direccion": "Boulevard Pacífica y Vía Punta Darién, primer piso, cerca de los consultorios",
+   "horario": "7 a. m.–6:30 p. m."
+  },
+  {
+   "nombre": "Hospital San Fernando",
+   "direccion": "Hospital San Fernando, Vía España, planta baja",
+   "horario": "7 a. m.–8 p. m."
+  },
+  {
+   "nombre": "Consultorios Paitilla",
+   "direccion": "Planta baja, dentro de la farmacia El Javillo",
+   "horario": "8 a. m.–6:30 p. m."
+  },
+  {
+   "nombre": "PH Santa Familia",
+   "direccion": "Casco Antiguo",
+   "horario": "9 a. m.–7 p. m."
+  }
+ ]
 }
