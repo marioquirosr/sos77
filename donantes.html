@@ -260,18 +260,6 @@ footer .pw img{display:block;height:22px;width:auto}
 </style>
 </head>
 <body>
-<div class="bar" id="barra">
-  <div class="w">
-    <p class="lbl"><b><span class="lg">Recibimos donaciones hasta</span><span class="sh">Donaciones hasta</span></b><span class="lg">viernes 16 de octubre, 5:00 p. m.</span><span class="sh">vie 16 oct, 5:00 p. m.</span></p>
-    <div class="cd" id="cd" role="timer" aria-label="Tiempo restante para donar">
-      <div class="u"><b id="cd-d">0</b><span>días</span></div>
-      <div class="u"><b id="cd-h">00</b><span>horas</span></div>
-      <div class="u"><b id="cd-m">00</b><span>min</span></div>
-      <div class="u"><b id="cd-s">00</b><span>seg</span></div>
-    </div>
-    <p class="cd-closed" id="cd-closed" hidden>La recepción de donaciones ya cerró. Gracias por tu apoyo.</p>
-  </div>
-</div>
 
 <section id="hero3">
   <div class="w">
@@ -457,25 +445,6 @@ footer .pw img{display:block;height:22px;width:auto}
   var D = JSON.parse(document.getElementById('data').textContent);
   var $ = function(id){return document.getElementById(id)};
   var COLORS = ['#FFB3CC','#A9E0FF','#D4F55A','#CDB8FF'];
-  /* cuenta regresiva */
-  var end = new Date(D.deadline).getTime();
-  function pad(n){return n<10?'0'+n:''+n}
-  function tick(){
-    var diff = end - Date.now();
-    if(diff <= 0){
-      $('cd').hidden = true; $('cd-closed').hidden = false;
-      document.querySelector('.bar .lbl').hidden = true;
-      return false;
-    }
-    var s = Math.floor(diff/1000);
-    $('cd-d').textContent = Math.floor(s/86400);
-    $('cd-h').textContent = pad(Math.floor(s%86400/3600));
-    $('cd-m').textContent = pad(Math.floor(s%3600/60));
-    $('cd-s').textContent = pad(s%60);
-    return true;
-  }
-  if(tick()){ var iv = setInterval(function(){ if(!tick()) clearInterval(iv); }, 1000); }
-
   /* donantes */
   function money(n){
     return '$' + Number(n).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
