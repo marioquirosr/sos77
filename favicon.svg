@@ -5,8 +5,9 @@
     <circle cx="100" cy="100" r="86" fill="none" stroke="#2A1A55" stroke-width="9"/>
     <g transform="translate(100 101) scale(.82) translate(-100 -100)">
       <circle cx="74" cy="96" r="7" fill="#2A1A55"/><circle cx="126" cy="96" r="7" fill="#2A1A55"/>
-      <path d="M62 84 L85 77 M138 84 L115 77" fill="none" stroke="#2A1A55" stroke-width="5" stroke-linecap="round"/>
-      <path d="M78 134 q22 -20 44 0" fill="none" stroke="#2A1A55" stroke-width="6.5" stroke-linecap="round"/>
-      <path d="M71 106 q-9 12 0 19 q9 -7 0 -19z" fill="#A9E0FF" stroke="#2A1A55" stroke-width="3.5" stroke-linejoin="round"/>
-    </g>
+        <circle cx="76.5" cy="93.5" r="2.2" fill="#fff"/><circle cx="128.5" cy="93.5" r="2.2" fill="#fff"/>
+        <path d="M64 80 q10 -8 21 -3 M136 80 q-10 -8 -21 -3" fill="none" stroke="#2A1A55" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="62" cy="116" r="8" fill="#FFB3CC" opacity=".9"/><circle cx="138" cy="116" r="8" fill="#FFB3CC" opacity=".9"/>
+        <path d="M76 120 q24 24 48 0" fill="none" stroke="#2A1A55" stroke-width="6.5" stroke-linecap="round"/>
+      </g>
 </svg>
