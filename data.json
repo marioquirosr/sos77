@@ -1,5 +1,5 @@
 {
- "actualizado": "17 oct, 12:40 a.m.",
+ "actualizado": "17 oct, 7:06 p.m.",
  "donaciones": [
   {
    "n": "Maria Laura Rodriguez Real",
@@ -42,6 +42,10 @@
    "m": 90
   },
   {
+   "n": "Familia Quirós Rodríguez",
+   "m": 100
+  },
+  {
    "n": "Ledys Maure",
    "m": 15
   },
@@ -52,10 +56,6 @@
   {
    "n": "Ivonne Marie De La Guardia Rodriguez",
    "m": 30
-  },
-  {
-   "n": "Familia Quirós Rodríguez",
-   "m": 100
   },
   {
    "n": "Familia Rodríguez Pereira",
@@ -166,8 +166,28 @@
    "m": 25
   },
   {
+   "n": "Nuria Nekelda Ashby Ariano",
+   "m": 50
+  },
+  {
    "n": "Anais Maria Velasco Abrego",
    "m": 50
+  },
+  {
+   "n": "Enrique Carlos Chuez Bernal",
+   "m": 5
+  },
+  {
+   "n": "Dalys Del Carmen Alveo Fernandez",
+   "m": 25
+  },
+  {
+   "n": "Marilu Del Carmen Chong Delgado",
+   "m": 20
+  },
+  {
+   "n": "Andres Felipe Rivera Rios",
+   "m": 30
   }
  ],
  "acopios": [
