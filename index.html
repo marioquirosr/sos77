@@ -283,6 +283,18 @@ footer .pw img{display:block;height:22px;width:auto}
 .ident .what{font-size:clamp(20px,4.6vw,28px);font-weight:800;line-height:1.15;max-width:18em;text-wrap:balance}
 .ident .chip{margin-top:8px}
 @media (max-width:560px){.foto{border-width:5px;border-radius:26px}}
+.hero2{grid-template-areas:"m" "t" "f" "i"}
+.mascot{grid-area:m}.thanks{grid-area:t}.foto{grid-area:f}.ident{grid-area:i}
+@media (min-width:900px){
+.hero2{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);grid-template-areas:"m f" "t f" "i f";grid-template-rows:auto auto 1fr;column-gap:clamp(40px,6vw,88px);row-gap:22px;justify-items:start;align-items:start;text-align:left}
+.mascot{width:112px}
+.thanks{max-width:none}
+.thanks h1{font-size:min(112px,8.2vw);margin-bottom:24px}
+.thanks p{font-size:20px;text-wrap:wrap}
+.foto{align-self:center;max-width:none}
+.ident{align-items:flex-start;padding-top:0;margin-top:18px;align-self:start}
+.ident h2{font-size:clamp(28px,3vw,40px)}
+}
 </style>
 
 </head>
