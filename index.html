@@ -283,17 +283,21 @@ footer .pw img{display:block;height:22px;width:auto}
 .ident .what{font-size:clamp(20px,4.6vw,28px);font-weight:800;line-height:1.15;max-width:18em;text-wrap:balance}
 .ident .chip{margin-top:8px}
 @media (max-width:560px){.foto{border-width:5px;border-radius:26px}}
-.hero2{grid-template-areas:"m" "t" "f" "i"}
-.mascot{grid-area:m}.thanks{grid-area:t}.foto{grid-area:f}.ident{grid-area:i}
+.hero2{grid-template-areas:"t" "f" "i"}
+.thead{display:flex;flex-direction:column;align-items:center;gap:clamp(20px,3vw,32px);margin-bottom:22px}
+.thead h1{margin-bottom:0}
+.thanks{grid-area:t}.foto{grid-area:f}.ident{grid-area:i}
 @media (min-width:900px){
-.hero2{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);grid-template-areas:"m f" "t f" "i f";grid-template-rows:auto auto 1fr;column-gap:clamp(40px,6vw,88px);row-gap:22px;justify-items:start;align-items:start;text-align:left}
-.mascot{width:112px}
+.hero2{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);grid-template-areas:"t f" "i f";grid-template-rows:auto 1fr;column-gap:clamp(40px,6vw,88px);row-gap:22px;justify-items:start;align-items:start;text-align:left}
+.thead{flex-direction:row;align-items:center;gap:22px;margin-bottom:26px}
+.mascot{width:96px;flex:none}
 .thanks{max-width:none}
-.thanks h1{font-size:min(112px,8.2vw);margin-bottom:24px}
+.thanks h1{font-size:min(92px,6.8vw)}
 .thanks p{font-size:20px;text-wrap:wrap}
 .foto{align-self:center;max-width:none}
 .ident{align-items:flex-start;padding-top:0;margin-top:18px;align-self:start}
 .ident h2{font-size:clamp(28px,3vw,40px)}
+}
 }
 </style>
 
@@ -303,6 +307,8 @@ footer .pw img{display:block;height:22px;width:auto}
 
 <section id="inicio">
   <div class="w hero2">
+    <div class="thanks">
+      <div class="thead">
     <div class="mascot" aria-hidden="true">
       <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <defs><clipPath id="pc"><circle cx="100" cy="100" r="86"/></clipPath></defs>
@@ -319,8 +325,8 @@ footer .pw img{display:block;height:22px;width:auto}
       <svg class="spark" style="top:-4%;right:2%" viewBox="-2 -2 28 28"><path d="M12 0 q1.5 10.5 12 12 q-10.5 1.5 -12 12 q-1.5 -10.5 -12 -12 q10.5 -1.5 12 -12z" fill="#FF5C93" stroke="#2A1A55" stroke-width="2.2" stroke-linejoin="round"/></svg>
       <svg class="spark" style="bottom:6%;left:-8%" viewBox="-2 -2 28 28"><path d="M12 0 q1.5 10.5 12 12 q-10.5 1.5 -12 12 q-1.5 -10.5 -12 -12 q10.5 -1.5 12 -12z" fill="#FFFFFF" stroke="#2A1A55" stroke-width="2.2" stroke-linejoin="round"/></svg>
     </div>
-    <div class="thanks">
       <h1>Gracias.</h1>
+      </div>
       <p>Gracias a ti, familias recibieron bolsas de alimentos, kits de aseo, carpas, colchonetas, comida para perros y gatos, ropa, sábanas y otros artículos esenciales para sostenerse tras el terremoto del 9 de octubre de 2026.</p>
       <p>Seguimos recibiendo los informes de entrega de los lugares a los que no pudimos llegar por el estado de los caminos. Esta semana publicaremos aquí el reporte general de las entregas y el uso que se hizo del dinero recolectado.</p>
     </div>
