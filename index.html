@@ -315,10 +315,6 @@ footer .pw img{display:block;height:22px;width:auto}
     <figure class="foto"><img src="entrega.jpg" width="1600" height="1200" alt="Voluntarios del equipo junto al personal de salud y las donaciones entregadas" fetchpriority="high"></figure>
     <div class="ident">
       <h2>Team SOS 7.7</h2>
-      <p class="what">Apoyo a Coclé tras el terremoto del 9 de octubre</p>
-      <a class="chip" href="#donaciones" aria-label="Ver el listado de donaciones">
-        <small>Total recaudado</small><b id="hero-total">$0.00</b>
-      </a>
     </div>
   </div>
 </section>
@@ -617,7 +613,6 @@ footer .pw img{display:block;height:22px;width:auto}
   var list = D.donaciones || [];
   var total = list.reduce(function(a,d){return a + Number(d.m||0)}, 0);
   $('total').textContent = money(total);
-  $('hero-total').textContent = money(total);
   $('count').textContent = list.length === 1 ? '1 aporte' : list.length + ' aportes';
   $('upd').textContent = 'Actualizado: ' + D.actualizado;
 
