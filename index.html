@@ -19,6 +19,7 @@
     else if(href.indexOf('wa.me/50761502322') > -1) ev = ['clic_whatsapp', {destino: 'comprobante'}];
     else if(href.indexOf('centros-de-acopio') > -1) ev = ['ver_centros_acopio', {}];
     else if(href.indexOf('donantes.html') > -1) ev = ['ver_donantes', {}];
+    else if(href.indexOf('gastos.html') > -1) ev = ['ver_reporte_gastos', {}];
     if(ev && window.gtag) gtag('event', ev[0], ev[1]);
   });
 </script>
@@ -350,7 +351,8 @@ footer .pw img{display:block;height:22px;width:auto}
       <p class="meta"><b id="count">0 aportes</b><br><span id="upd"></span></p>
     </div>
     <div class="cta2">
-      <a class="btn" href="donantes.html">Ver lista de donantes →</a>
+      <a class="btn" href="gastos.html">Reporte de gastos →</a>
+      <a class="btn wht" href="donantes.html">Ver lista de donantes →</a>
     </div>
   </div>
 </section>
